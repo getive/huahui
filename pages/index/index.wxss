@@ -1,0 +1,81 @@
+/* pages/words/words.wxss */
+
+.heading {
+  text-align: center;
+  color: #888;
+  font-size: 15px;
+  padding-bottom: 10px;
+  line-height: 2;
+  margin-top: 10px;
+}
+
+.subtitle {
+  display: inline-block;
+  border: 3px double #aaa;
+  color: #aaa;
+  padding: 0 6px;
+}
+
+.words {
+  padding: 0 20rpx 20rpx;
+  font-family: "Segoe UI";
+  color: white;
+}
+
+.word {
+  font-size: 56rpx;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  text-shadow: 0 -.1em 0.1em rgba(0, 0, 0, 0.5);
+}
+
+.correct {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.correct .symbol {
+  color: green;
+}
+
+.error {
+  font-size: 14px;
+}
+
+.error .symbol {
+  color: red;
+}
+
+.symbol {
+  margin-right: 10rpx;
+}
+
+.word-wrap {
+  position: relative;
+  text-align: center;
+}
+
+.word-body {
+  padding: 10px 0 15px;
+  background: #2881bb linear-gradient(hsla(0, 0%, 100%, 0.2), transparent);
+  border-radius: 0.2em;
+  box-shadow: 10px 10px 0 #ddd;
+  margin: 10px 20px 20px 14px;
+}
+
+.number {
+  background-color: #ccc;
+  color: white;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 2em;
+  text-align: center;
+}
+
+.word-wrap.active .number {
+  background-color: #FF9326;
+  color: white;
+}

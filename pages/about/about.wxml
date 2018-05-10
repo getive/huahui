@@ -1,0 +1,21 @@
+<!--pages/about/about.wxml-->
+<view class="page-about">
+  <view class="icon-wrap">
+    <image src="/assets/images/icon.png" class="icon"></image>
+    <view>｡.ﾟ✧:✿花༙྇灰༙྇✿:✧ﾟ.｡ - 灰化肥会发黑，花会化灰。</view>
+    <view>中国程序员常读错的英文单词</view>
+  </view>
+  <view class="icons">
+    <button class="btn-plain" bindtap="github"><text class="icon icon-github"></text></button>
+    <button class="btn-plain" open-type="contact"><text class="icon icon-chat"></text></button>
+    <button class="btn-plain" bindtap="clearCache"><text class="icon icon-trash"></text></button>
+  </view>
+  <view class="readme">
+    <rich-text nodes="{{explain}}"></rich-text>
+    <rich-text nodes="{{projects[0]}}" data-index="0" bindtap="tap"></rich-text>
+    <rich-text nodes="{{projects[1]}}" data-index="1" bindtap="tap"></rich-text>
+    <rich-text nodes="{{projects[2]}}" data-index="2" bindtap="tap"></rich-text>
+  </view>
+  <view class="tip-wrap"><view class="tip">点触列表项可复制网址至剪粘板</view></view>
+  <view class="reminder"><text class="b">注意：</text>由于小程序对域名备案的要求，个别采用国外网站音频源的单词无法播放读音。</view>
+</view>

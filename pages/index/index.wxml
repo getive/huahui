@@ -1,0 +1,19 @@
+<!--pages/words/words.wxml-->
+<navigator url="/pages/about/about" hover-class="none">
+  <view class="heading" id="heading"><view class="subtitle">中国程序员常读错的英文单词 <text class="icon icon-lightbulb"></text></view></view>
+</navigator>
+<view class="words">
+  <view class="word-wrap {{activeIndex===index?'active':''}}" wx:for="{{words}}" wx:key="index" data-index="{{index}}" bindtap="onTap" id="word-{{index}}">
+    <view class="word-header">
+      <view class="number">{{index+1}}</view>
+    </view>
+    <view class="word-body">
+      <view>
+        <text class="word">{{item.word}}<text class="icon icon-voice" wx-if="{{item.voice}}" style="opacity: {{activeIndex===index?opacity:'1'}}"></text></text>
+      </view>
+      <view>
+        <text class="correct"><text class="icon icon-correct"></text>{{item.correct}}</text><text class="error" wx-if="{{item.error}}"><text class="icon icon-error"></text>{{item.error}}</text>
+      </view>
+    </view>
+  </view>
+</view>

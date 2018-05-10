@@ -1,0 +1,70 @@
+/* pages/about/about.wxss */
+.page-about {
+  padding: 20px;
+}
+view {
+  font-size: 12px;
+}
+.icon-wrap {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6em;
+}
+.icon {
+  width: 150px;
+  height: 150px;
+}
+.readme {
+  padding-top: 10px;
+  line-height: 2em;
+  border-top: 1px dashed #ccc;
+  color: #555;
+}
+.p {
+  font-weight: bold;
+}
+.dl {
+  margin-left: 20px;
+  list-style-type: disc;
+  line-height: 1.8em;
+}
+.dt {
+  display: list-item;
+}
+.tip-wrap {
+  text-align: center;
+}
+.tip {
+  margin-top: 10px;
+  text-align: center;
+  color: #ccc;
+  border: 3px double #ccc;
+  display: inline-block;
+  padding: 6px;
+}
+.reminder {
+  margin: 30px 0 10px;
+  border-left: 3px solid #999;
+  color: #999;
+  font-size: 12px;
+  padding-left: 6px;
+}
+.b {
+  font-weight: bold;
+}
+.icons {
+  text-align: center;
+  border-top: 1px dashed #ccc;
+  margin-top: 10px;
+}
+.icons .icon {
+  color: #666;
+}
+.btn-plain {
+  border: 0;
+  display: inline-block;
+  background-color: transparent;
+}
+.btn-plain::after{
+  border: 0;
+}
